@@ -1,0 +1,15 @@
+{
+  "name": "work-experience",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:pdf": "md-to-pdf docs/*.md --config-file ./pdf-configs/config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
+}

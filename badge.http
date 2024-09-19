@@ -1,0 +1,6 @@
+@endpoint=https://img.shields.io/badge
+@target=amazonwebservices
+@background-color=f3b605
+@logo-color=white
+###
+GET {{endpoint}}/-{{target}}-{{background-color}}?style=flat-square&logo={{target}}&logoColor={{logo-color}}
