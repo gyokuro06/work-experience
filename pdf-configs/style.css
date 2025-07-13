@@ -47,19 +47,16 @@ div[style*="page-break-before"] {
 }
 
 /* バッジ画像コンテナのスタイル */
-div {
-  margin: 10px 0;
-  line-height: 1.8;
-}
+/* div {
+  margin: 4px 0;
+} */
 
 /* バッジ画像のスタイル */
-div img {
-  margin: 2px 4px;
+/* div img {
   display: inline-block;
   max-width: 120px;
-  height: auto;
   vertical-align: middle;
-}
+} */
 
 table {
   font-size: 11px;
