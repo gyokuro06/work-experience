@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:pdf": "pnpm dlx md-to-pdf docs/*.md --config-file ./pdf-configs/config.js",
-    "build:html": "pnpm dlx md-to-html docs/*.md --config-file ./pdf-configs/config.js --as-html"
+    "build:html": "pnpm dlx md-to-pdf docs/*.md --config-file ./pdf-configs/config.js --as-html"
   },
   "keywords": [],
   "author": "",

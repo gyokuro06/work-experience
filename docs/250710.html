@@ -1,0 +1,619 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8"><style>@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-size: 12px;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+}
+
+h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+h4 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+/* リストスタイル */
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* ページ改行のスタイル */
+div[style*="page-break-before"] {
+  page-break-before: always;
+}
+
+/* バッジ画像コンテナのスタイル */
+/* div {
+  margin: 4px 0;
+} */
+
+/* バッジ画像のスタイル */
+/* div img {
+  display: inline-block;
+  max-width: 120px;
+  vertical-align: middle;
+} */
+
+table {
+  font-size: 11px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+  table-layout: fixed;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  line-height: 1.4;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* テーブルの最初の列（key列）の幅を固定 */
+td:first-child,
+th:first-child {
+  width: 25%;
+  font-weight: bold;
+}
+
+/* テーブルの2番目の列（value列）の幅を固定 */
+td:nth-child(2),
+th:nth-child(2) {
+  width: 75%;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+th {
+  text-align: left;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+
+/* 強調表示 */
+strong {
+  color: #333;
+}
+
+/* 段落 */
+p {
+  margin: 10px 0;
+}
+/*# sourceURL=./pdf-configs/style.css*/</style><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}/*# sourceURL=/Users/yuya.yagai/Library/Caches/pnpm/dlx/5axvwallsftvir6byn57rb6bim/198062f337b-72e8/node_modules/.pnpm/highlight.js@11.11.1/node_modules/highlight.js/styles/github.css*/</style></head>
+	<body class="markdown-body">
+		<h1>職務経歴書</h1>
+<h2>スキル</h2>
+<ul>
+<li>Webアプリケーション開発 (要件定義 / 設計 / 実装 / テスト / 運用)</li>
+<li>アジャイル開発 (XP / TDD / ペアプロ)</li>
+<li>コンテナ環境での開発・環境構築</li>
+<li>CI/CD環境構築</li>
+<li>機械学習モデル学習</li>
+</ul>
+<h2>技術スタック</h2>
+<h3>言語</h3>
+<div>
+    <img alt="Kotlin" src="https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&amp;logo=Kotlin&amp;logoColor=white">
+    <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&amp;logo=Java&amp;logoColor=white">
+    <img alt="Rust" src="https://img.shields.io/badge/-Rust-080808?style=flat-square&amp;logo=Rust&amp;logoColor=white">
+    <img alt="Go" src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white">
+    <img alt="Clojure" src="https://img.shields.io/badge/-Clojure-5881D8?style=flat-square&amp;logo=Clojure&amp;logoColor=white">
+    <img alt="F#" src="https://img.shields.io/badge/-F%23-378bba?style=flat-square">
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&amp;logo=TypeScript&amp;logoColor=white">
+</div>
+
+<h3>フレームワーク</h3>
+<div>
+    <img alt="SpringBoot" src="https://img.shields.io/badge/-SpringBoot-6DB33F?style=flat-square&amp;logo=SpringBoot&amp;logoColor=white">
+    <img alt=".NET Framework" src="https://img.shields.io/badge/-.NET%20Framework-512BD4?style=flat-square&amp;logo=.NET&amp;logoColor=white">
+    <img alt="Vue.js" src="https://img.shields.io/badge/-Vue.js-47ba87?style=flat-square&amp;logo=Vue.js&amp;logoColor=white">
+    <img alt="React" src="https://img.shields.io/badge/-React-61dafb?style=flat-square&amp;logo=react&amp;logoColor=white">
+    <img alt="Angular" src="https://img.shields.io/badge/-Angular-d82d2f?style=flat-square&amp;logo=Angular&amp;logoColor=white">
+    <img alt="lit" src="https://img.shields.io/badge/-lit-324FFF?style=flat-square&amp;logo=lit&amp;logoColor=white">
+</div>
+
+<h3>クラウド</h3>
+<div>
+    <img alt="GCP" src="https://img.shields.io/badge/-GoogleCloud-f3b605?style=flat-square&amp;logo=GoogleCloud&amp;logoColor=white">
+    <img alt="AWS" src="https://img.shields.io/badge/-AWS-ff9c12?style=flat-square&amp;logo=amazonwebservices&amp;logoColor=white">
+</div>
+
+<h3>コンテナ</h3>
+<div>
+    <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&amp;logo=Docker&amp;logoColor=white">
+    <img alt="Kubernetes" src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&amp;logo=Kubernetes&amp;logoColor=white">
+    <img alt="ArgoCD" src="https://img.shields.io/badge/-ArgoCD-e77549?style=flat-square&amp;logo=ArgoCD&amp;logoColor=white">
+    <img alt="Helm" src="https://img.shields.io/badge/-Helm-0a1085?style=flat-square&amp;logo=Helm&amp;logoColor=white">
+</div>
+
+<h3>パイプライン</h3>
+<div>
+    <img alt="Jenkins" src="https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&amp;logo=Jenkins&amp;logoColor=white">
+    <img alt="Buildkite" src="https://img.shields.io/badge/-Buildkite-14CC80?style=flat-square&amp;logo=Buildkite&amp;logoColor=white">
+    <img alt="GoCD" src="https://img.shields.io/badge/-GoCD-94399E?style=flat-square&amp;logo=GoCD&amp;logoColor=white">
+    <img alt="ArgoWorkflow" src="https://img.shields.io/badge/-ArgoWorkflow-e77549?style=flat-square&amp;logo=ArgoWorkflow&amp;logoColor=white">
+</div>
+
+<h3>DB</h3>
+<div>
+    <img alt="PostgreSQL" src="https://img.shields.io/badge/-PostgreSQL-31648c?style=flat-square&amp;logo=PostgreSQL&amp;logoColor=white">
+    <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-1b678b?style=flat-square&amp;logo=MySQL&amp;logoColor=white">
+</div>
+
+<h3>AI</h3>
+<div>
+    <img alt="SentenceTransformer" src="https://img.shields.io/badge/-SentenceTransformer-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=white">
+    <img alt="ML Ops" src="https://img.shields.io/badge/-MLOps-14CC80?style=flat-square&amp;logoColor=white">
+</div>
+
+<div style="page-break-before:always"></div>
+
+<h2>要約</h2>
+<p>私はWebアプリケーションの開発にエンジニアとして約5年携わってきました。
+アジャイル(XP)開発手法と要件定義から運用まで一貫して関わってきた点が私の強みだとかんがえています。
+PMや実際のユーザーに現在の機能に関するフィードバックをもらったり、
+開発中の機能についてできるだけ早くMVPを作り上げて、
+コアな価値を感じてもらえる機能を触ってもらってできるだけ早く方向転換できるような動き方が得意です。
+また、マイクロサービスアーキテクチャを採用している現場で、
+各APIやマイクロフロントエンドごとに異なる言語・フレームワークを採用していたなかでキャッチアップをしつつ開発していく経験が長いので、
+技術のキャッチアップに自信があります。
+ただ言われた通りに機能を開発するのではなく、
+本当にユーザーが求めている機能なのかPMなどと考えながら開発できるエンジニアでありたいと考えています。</p>
+<h2>職務経歴詳細</h2>
+<h3>キャリア開発のためのWebアプリケーション開発(BtoB)（2025年4月 - ）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>3人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Go / TypeScript / Echo / Next.js</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Docker / AWS</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>MySQL / Redis</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / Jira</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>法人向けのキャリア開発用アプリケーションを開発しています。<br>
+サービスの内容は、ユーザー(社員)にキャリアに関する質問に回答してもらい、それを分析したレポートを提供しキャリア面談等に活用してもらうといったものになります。<br>
+担当業務としては、割り当てられたタスクの要件定義 / 設計 / 実装 を行いコードレビューを行ってもらっています。<br>
+状況としては、2024年1月から外部の会社に開発を委託していたのですが、バグが頻出したりと様々な問題が発生したこともあり社内で開発することになったタイミングで参画することになりました。<br>
+アプリケーションをリプレイスする形なので、既存アプリケーション機能の再現やデータ移行を決められた期限内に行う必要があったのですが、<br>
+設計やテストが不十分であれば将来的に開発速度が落ちると考え、最低限のE2Eテストを低コストに実装する方法やドメイン定義、アーキテクチャ設計を行い提案することで中長期的な価値にアプローチしています。<br></p>
+<h3>社内利用のための機械学習モデル開発（2025年3月 - ）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>4人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Kotlin / F# / Python / Fast API / SentenceTransformer</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Docker / Buildkite / GCP(Vertex AI)</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>PostgreSQL / ElasticSearch</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / アジャイル開発 (XP)</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>社内で利用するために社内ドメイン特化の分類・検索モデル学習を行っています。<br>
+具体的には、Gemma2モデルをベースにSentence Transformerを利用して社内ドメイン知識の学習を行い、汎用的に利用できるモデル開発をVertex AI上で行っています。<br>
+使用できるGPUにコストやリージョン的に制限があり、また、学習するデータ量も多かったので学習時間がVertex AIで連続稼働上限時間に達して学習が完了しなかったり、GPUにモデルが乗り切らず学習が回せない問題がありました。<br>
+そこでチーム内の機械学習エンジニアと協力して、FSDPなどの並列分散学習を取り入れて1GPUあたりの学習時間を短縮したり、QLoRAや2D-Matryoshkaを利用してモデルサイズを小さくすることに取り組んでいました。<br>
+また、できるだけ高速にやりたいと思った実験を実行できるようにBuildkiteなどを用いたML Opsの最適化を行い失敗するときはできるだけ早くパイプラインが落ちるようにしたり、<br>
+モデル学習を行うコードのアーキテクチャで実験したい処理を挿入できるようにして、毎実験ごとに書くコード量を減らしたりといった工夫を行いました。<br>
+また、ElasticSearchを使ってベクトル検索ができるAPIを開発した際には、ベクトルのエンベディングに時間がかかるため事前にベクトルを生成してElasticSearchにインデックスしておく仕組みや、<br>
+モデル更新時やベクトル検索対象のデータセット更新時に迅速にElasticSearchを更新できるような仕組みづくりにも貢献しました。<br></p>
+<h3>海外事業向けの機能開発（2024年9月 - 2025年3月）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>4人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Kotlin / F# / TypeScript / .NET</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Docker / Jenkins / GCP</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>PostgreSQL / MySQL</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / アジャイル開発 (XP)</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>海外事業向けにローカライズや各国の法律や文化にフィットした形で提供するために日本向けに提供している機能の開発をしていました。<br>
+担当業務としては、要件定義 / 工数見積もり / インフラ構築 / 設計 / テスト / 実装 / CI/CD環境構築 を行っています。<br>
+私が参画した時点でのチームの状況としては、プロダクトオーナー (PO) とのコミュニケーションにチームが疲弊していたり優先順位が頻繁に変わる状況で近視眼的になっていました。<br>
+組織全体としては、Web Componentsを活用して再利用可能なコンポーネントをたくさんつくり、複数プロダクト間の開発速度を全体的に底上げしようという時期だったのですが、<br>
+Web Componentsの開発スキル自体は組織に蓄積されている状態ではなかったので、チームの状況的にそこまで考えられる余裕がありませんでした。<br>
+そこで、個人的にいくつかWeb Componentを作成して知見をチームに還元したり、POとのコミュニケーションにおいてもPOが根本的に達成したい目標を確認して、<br>
+開発チームとPOとで優先順位に対する共通認識を作り上げ、POが急に優先順位を変更したのではなく状況がこういう風に変わったのでこういう理由で優先順位が変わったのだなと開発チームが納得感をもって理解できるようにしました。<br></p>
+<h3>海外知見共有サービスのシステムマイグレーション・機能開発（2024年4月 - 2024年9月）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>3人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Kotlin / Java / TypeScript / SpringBoot / Angular</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Docker / Jenkins  / AWS</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>PostgreSQL / MySQL</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / アジャイル開発 (XP) / 機械学習モデル</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>海外の専門知識を持っているユーザーに質問をできるサービスのマッチングプラットフォームを開発しています。<br>
+サービスを買収したため、こちらの環境でシステムを運用し、機能開発を行なっていくためにシステムのマイグレーション作業を行いました。<br>
+マイグレーション完了後は、機能開発とリファクタリングを主に行なっています。<br>
+担当業務としては、要件定義 / 工数見積り / インフラ構築 / 設計 / テスト / 実装 / CI/CD環境構築 を行っています。<br>
+AWSや機械学習モデルの学習システム構築など、経験のない技術に触れることが多いプロジェクトですが、買収元会社のエンジニアによるサポートなどもあり開発を進められています。<br>
+システム自体は設計思想やデプロイ思想が異なっているため、認知不可や開発コストを下げるための工夫をしなければいけない点が難しいですが、<br>
+テストやCI/CD環境の整備、強度高く改善を日常的に行うことで、徐々にリファクタリングを進めているところです。</p>
+<h3>市場分析Webアプリケーションのニュース機能に関する機能追加・修正（2023年4月 - 2024年4月）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>4人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Kotlin / Java / Scala / Clojure / Rust / Dart / TypeScript / SpringBoot / Angular / Next.js</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Kubernetes / Docker / Helm / Jenkins / Argo / GCP</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>PostgreSQL / MySQL</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / BitBucket / Mercurial / skaffold / アジャイル開発 (XP)</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>プロダクトを日常的に使用してもらえるように、ニュース機能の追加/修正を通じてデイリーの価値を届けるための開発をしていました。<br>
+担当業務としては、要件定義 / 工数見積り / 設計 / テスト / 実装 / CI/CD環境構築 を行っていました。<br>
+工夫した点としては、レガシーシステムに対する開発の進め方です。<br>
+ニュース機能自体は古くに実装されたレガシーシステムで、技術的負債の返済が必要な状況だったのですが、機能追加をしてユーザーに価値を届けていかないといけないという状況でした。<br>
+そのままリファクタリングを行わずに、レガシーシステムに乗っかって機能を追加していくと開発効率が下がっていき、どんどん開発しずらい機能になっていくのも明らかでした。<br>
+その中で、プロダクトマネージャーとコミュニケーションを取りながら機能開発のスコープを狭め、ユーザーに最も価値が届く部分は開発しつつリファクタリングも行っていくようにしていきました。<br></p>
+<h3>市場分析Webアプリケーションの企業リスト機能に関する新規機能開発（2022年12月 - 2023年4月）</h3>
+<p>|key|value|
+|—|—–| |雇用形態|業務委託|
+|チーム編成|5人チーム|
+|言語・フレームワーク|Kotlin / Java / Clojure / F# / TypeScript / SpringBoot / .NET / Vue.js / lit|
+|インフラ|Kubernetes / Docker / Helm / Jenkins / Buildkite / GoCD / Argo / GCP|
+|DB|PostgreSQL / MySQL|
+|その他|Git / BitBucket / Mercurial / skaffold / WebComponent / アジャイル開発 (XP)|</p>
+<h4>業務内容</h4>
+<p>プロダクトを組織全体で使ってもらえるように、所属組織に共有可能な企業リストを作成し組織全体で共通した企業リストをウォッチできる機能を新規開発していました。<br>
+担当業務としては、要件定義 / 工数見積り / 設計 / テスト / 実装 / CI/CD環境構築 を行っていました。<br>
+工夫した点としては、新規プロジェクトの立ち上げ期だったので確実に立ち上げを成功させるための開発の進め方です。<br>
+まず、最初にプロジェクトマネージャー(PdM)にコンセプトを共有してもらって工数見積りを行う際に、どの機能が最もユーザーに価値が届く機能なのかPdMとコミュニケーションを取りながら、開発の優先順位をつけました。<br>
+その後の開発の進め方としても、新機能の骨子にあたる部分の開発を優先的に進めていき、できるだけ早くPdMに一連の機能を体験してもらえる状態を作りフィードバックを得られるようにすることで、手戻りや方向転換を早いタイミングで行えるように工夫しました。<br></p>
+<h3>市場分析Webアプリケーションのデータ取り込みAPIの新規開発（2021年8月 - 2022年12月）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>業務委託</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>3人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Kotlin / Java / Clojure / F# / TypeScript / SpringBoot / .NET / Vue.js</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Kubernetes / Docker / Helm / Jenkins / Buildkite / Argo / GCP</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>PostgreSQL / MySQL</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / BitBucket / Mercurial / skaffold / アジャイル開発 (XP)</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>プロダクトで使用できるデータを拡充するために、新たに契約できたデータサプライヤーから提供されたデータをプロダクトに取り込むための新規開発を行っていました。<br>
+担当業務としては、要件定義 / 工数見積り / 設計 / テスト / 実装 / CI/CD環境構築 を行っていました。<br>
+工夫した点としては、開発するのがデータ取り込みAPIということもあり一度開発すると触る機会がほとんどないので、保守性や運用性の高いAPIを開発するよう工夫しました。<br>
+REST APIのパス設計でどのようなクエリパラメーターを受け取れるようにしていれば運用性が高くなるのかや、クリーンアーキテクチャをベースにモジュール間の依存方向管理や高凝集疎結合な設計を考えることで保守性や拡張性、運用性の高いAPIを設計していました。<br>
+また、エラーハンドリングやロギングを適切にチューニングしながら行うことで、データ取り込みに失敗したときの原因特定やリカバリーにかかる時間を短縮することができました。</p>
+<h3>タスク管理Webアプリケーションの新規開発（2020年3月 - 2021年7月）</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>雇用形態</td>
+<td>正社員</td>
+</tr>
+<tr>
+<td>チーム編成</td>
+<td>15人チーム</td>
+</tr>
+<tr>
+<td>言語・フレームワーク</td>
+<td>Java / VBA / VBScript / SpringBoot</td>
+</tr>
+<tr>
+<td>インフラ</td>
+<td>Docker</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>MySQL</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>Git / ウォーターフォール開発</td>
+</tr>
+</tbody></table>
+<h4>業務内容</h4>
+<p>カンバンやチケット管理のできるタスク管理システムの新規開発を行っていました。<br>
+担当業務としては、実装 / テスト実装 を行っていました。<br>
+工夫した点としては、改善の提案を積極的に行っていた点です。<br>
+詳細設計書に基づいて実装する際に、インターフェースは変えられなかったので、その中身の処理をprivate関数に分割することでよりやっていることが明確な関数を作ってよいか提案したり、
+テスト手順書の通り実行し報告書を作成する業務を行う際に、VBAやVBScriptを使用して報告書をある程度自動作成するツールを開発し、全員で使っていけないか提案していました。</p>
+
+	
+
+</body></html>
